@@ -1,0 +1,17 @@
+.mcontent {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(2) {
+    background: var(--c-four);
+  }
+
+  &__title {
+    color: var(--c-one);
+    margin-top: 0;
+    margin-bottom: 7%;
+  }
+}

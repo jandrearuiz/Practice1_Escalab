@@ -1,0 +1,22 @@
+.hcontent {
+  color: var(--c-three);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__element {
+    display: block;
+    font-weight: 600;
+  }
+
+  &__img {
+    width: 70%;
+    margin: 1%;
+    max-width: 500px;
+  }
+}
