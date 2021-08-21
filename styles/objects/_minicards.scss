@@ -1,0 +1,9 @@
+.minicards {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    color: var(--c-one);
+    margin: 0 0 4% 8%;
+  }
+}

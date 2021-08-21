@@ -7,6 +7,11 @@
 
   &:nth-child(2) {
     background: var(--c-four);
+
+    @media screen and (min-width: $large) {
+      flex-direction: row;
+      padding-right: 0;
+    }
   }
 
   &__title {
@@ -14,4 +19,9 @@
     margin-top: 0;
     margin-bottom: 4%;
   }
+
+  @media screen and (min-width: $large) {
+    padding: 2.5%;
+  }
+
 }

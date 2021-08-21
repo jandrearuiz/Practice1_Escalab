@@ -1,3 +1,16 @@
 .minicard {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+
+  &__img {
+    align-self: center;
+    width: 30%;
+
+    @media screen and (min-width: $large) {
+      width: initial;
+    }
+  }
 }

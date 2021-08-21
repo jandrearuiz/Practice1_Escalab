@@ -7,6 +7,10 @@
 
   &__title {
     font-weight: 400;
+
+    @media screen and (min-width: $large) {
+      margin: 0;
+    }
   }
 
   &__element {
@@ -15,8 +19,13 @@
   }
 
   &__img {
-    width: 70%;
+    width: 50%;
     margin: 1%;
     max-width: 500px;
+
+    @media screen and (min-width: $large) {
+      margin: 0;
+      width: initial;
+    }
   }
 }

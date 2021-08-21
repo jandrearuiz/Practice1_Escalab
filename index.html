@@ -8,7 +8,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0"
     />
     <title>My Branding</title>
-    <link rel="shortcut icon" href="./images/iso.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/iso.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
       rel="stylesheet"
@@ -18,11 +18,15 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <img src="./images/logotipo.svg" alt="logo" class="nav__logo" />
+        <a href="index.html" class="nav__header" target="__blank">
+          <img src="./images/logotipo.svg" alt="logo" class="nav__logo" />
+        </a>
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Beneficios</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Beneficios</a>
+          </li>
           <li class="nav__item"><a href="#" class="nav__link">Cotizar</a></li>
         </ul>
       </nav>
@@ -50,66 +54,60 @@
     <main class="wrap">
       <section class="mcontent">
         <h2 class="mcontent__title">Mis Servicios</h2>
-        <div class="card">
-          <img
-            src="./images/img-services-1.svg"
-            alt="asesora"
-            class="card__img"
-          />
-          <h3 class="title">HTML5</h3>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui,
-            eum voluptatibus unde praesentium corporis temporibus. Dolor,
-            explicabo. Eos, totam. Ad ratione expedita adipisci quidem
-            reprehenderit architecto provident quibusdam ab.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="./images/img-services-2.svg"
-            alt="buscador"
-            class="card__img"
-          />
-          <h3 class="title">CSS</h3>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui,
-            eum voluptatibus unde praesentium corporis temporibus. Dolor,
-            explicabo. Eos, totam. Ad ratione expedita adipisci quidem
-            reprehenderit architecto provident quibusdam ab.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="./images/img-services-3.svg"
-            alt="personas"
-            class="card__img"
-          />
-          <h3 class="title">Javascript</h3>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui,
-            eum voluptatibus unde praesentium corporis temporibus. Dolor,
-            explicabo. Eos, totam. Ad ratione expedita adipisci quidem
-            reprehenderit architecto provident quibusdam ab.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="./images/img-services-4.svg"
-            alt="dinero"
-            class="card__img"
-          />
-          <h3 class="title">Git/GitHub</h3>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui,
-            eum voluptatibus unde praesentium corporis temporibus. Dolor,
-            explicabo. Eos, totam. Ad ratione expedita adipisci quidem
-            reprehenderit architecto provident quibusdam ab.
-          </p>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="./images/img-services-1.svg"
+              alt="asesora"
+              class="card__img"
+            />
+            <h3 class="title">HTML5</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              qui, eum voluptatibus unde praesentium corporis temporibus. 
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/img-services-2.svg"
+              alt="buscador"
+              class="card__img"
+            />
+            <h3 class="title">CSS</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              qui, eum voluptatibus unde praesentium corporis temporibus. 
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/img-services-3.svg"
+              alt="personas"
+              class="card__img"
+            />
+            <h3 class="title">Javascript</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              qui, eum voluptatibus unde praesentium corporis temporibus.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/img-services-4.svg"
+              alt="dinero"
+              class="card__img"
+            />
+            <h3 class="title">Git/GitHub</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              qui, eum voluptatibus unde praesentium corporis temporibus. 
+            </p>
+          </div>
         </div>
       </section>
       <section class="mcontent">
-        <h2 class="mcontent__title">Beneficios</h2>
         <div class="minicards">
+          <h2 class="minicards__title">Beneficios</h2>
           <div class="minicard">
             <img
               src="./images/img-benefits-1.svg"
@@ -156,6 +154,7 @@
             </div>
           </div>
         </div>
+        <img class= "minicard__img" src="./images/img-benefits.svg" alt="archivos">
       </section>
     </main>
   </body>
